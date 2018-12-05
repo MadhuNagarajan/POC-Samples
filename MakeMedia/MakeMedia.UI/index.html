@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html ng-app="MakeMediaApp">
+
+<head>
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <title>makemedia</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="scripts/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/outcode/outcode.service.js"></script>
+    <script src="app/outcode/outcode.controller.js"></script>
+</head>
+
+<body class="page">
+    <div ng-include src="'/app/common/header.tmpl.html'"></div>
+    <p>File Details</p>
+    <div ng-controller="FileCtrl" class="product">
+        <form class="inputControls" novalidate name="inputForm">
+            
+            Enter the file name: <input ng-model="fileName" type="text" required />
+            <button ng-click="loadFileData()" class="btn">Get Details</button>
+            <p></p>
+            <div>{{message}}</div>
+        </form>
+        <div>Content: {{fileData}}</div>
+    </div>
+    <br />
+       
+    <div ng-include src="'/app/common/footer.tmpl.html'"></div>
+</body>
+</html>

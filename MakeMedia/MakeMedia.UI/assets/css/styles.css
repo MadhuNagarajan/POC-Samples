@@ -1,0 +1,23 @@
+﻿.page {
+    background:#8B9F3B;
+}
+.product .item {
+    border:1px solid gray;
+    background:##e2e2e2;
+    width: 200px;
+    float: left;
+    height: 100px;
+    padding: 10px;
+    font-family: arial;
+    font-size: 12px;
+}
+
+.inputControls {
+    border:1px solid gray;
+    width:450px;
+    height:75px;
+}
+
+.inputControls input {
+
+}
